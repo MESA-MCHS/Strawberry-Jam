@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'screens/chat.dart';
+import 'screens/settings.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -33,27 +36,6 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const MyHomePage(),
-    );
-  }
-}
-
-class ChatPage extends StatelessWidget {
-  const ChatPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Chat'),
-      ),
-      body: Center(
-        child: FilledButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text('Go back!'),
-        ),
-      ),
     );
   }
 }
@@ -113,8 +95,12 @@ class _MyHomePageState extends State<MyHomePage> {
               child: const Text('New chat'),
             ),
             FilledButton(
-              onPressed: () {},
-              child: const Text('Settings'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SettingsScreen()),
+                );
+              },              child: const Text('Settings'),
             ),
           ],
         ),
