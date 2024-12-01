@@ -1,6 +1,6 @@
 # Strawberry Jam
 
-<a href="https://idx.google.com/import?url=https%3A%2F%2Fgithub.com%2FMESA-MCHS%2FStrawberry-Jam">
+<!--<a href="https://idx.google.com/import?url=https%3A%2F%2Fgithub.com%2FMESA-MCHS%2FStrawberry-Jam">
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
@@ -13,6 +13,6 @@
       alt="Open in IDX"
       src="https://cdn.idx.dev/btn/open_purple_32.svg">
   </picture>
-</a>
+</a>-->
 
 AI Frontend
